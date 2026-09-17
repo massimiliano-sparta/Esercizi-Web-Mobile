@@ -1,0 +1,66 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 640px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #222;
+}
+
+.sottotitolo {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 120px;
+}
+
+input, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul#lista-attivita {
+    list-style: none;
+    padding: 0;
+}
+
+li.attivita {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+}
+
+li.attivita.completata .titolo {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li.attivita .titolo {
+    font-weight: 600;
+    flex: 1;
+}
+
+li.attivita .scadenza {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+li.attivita button {
+    font-size: 0.8rem;
+}

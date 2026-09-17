@@ -1,0 +1,6 @@
+# Credenziali reali: mai committarle
+api/credentials.php
+
+# File di sistema comuni
+.DS_Store
+*.log
