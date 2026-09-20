@@ -1,4 +1,4 @@
-# Massimiliano Sparta — Sito personale
+# Massimiliano Spartà — Sito personale
 
 Sito personale con pagina "chi sono", stato degli esami, progetti e un form
 di contatto funzionante; realizzato durante il corso di **Programmazione
