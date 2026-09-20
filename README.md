@@ -52,9 +52,3 @@ e scadenza. Serve a mostrare in pratica due cose viste a lezione:
    php -S localhost:8000
    ```
 4. Apri `http://localhost:8000` nel browser.
-
-## Note
-
-Progetto realizzato con il supporto di Claude (Anthropic) durante lo studio
-personale, come da indicazioni del corso: usato come tutor/revisore di
-codice, non per generare la soluzione da consegnare senza capirla.
