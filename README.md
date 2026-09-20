@@ -6,7 +6,7 @@ Web e Mobile** (UniMe) come banco di prova per lo stack richiesto dal
 progetto d'esame: HTML/CSS/JS lato client, PHP lato server, MySQL, servizio
 web RESTful.
 
-**Non è il progetto d'esame finale** — è nato come esercizio dopo la prima
+**Non è il progetto d'esame finale**, è nato come esercizio dopo la prima
 lezione del corso e si è espanso via via, prima di scegliere il tema vero
 e proprio della consegna.
 
