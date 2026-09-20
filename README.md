@@ -30,40 +30,37 @@ Due concetti mostrati in pratica:
   richiesta malformata, `405` metodo non supportato).
 
 ## Struttura
-'''
-├── index.html home / pagina personale
-├── attivita.html demo gestione attività
-├── style.css tema condiviso da tutte le pagine
-├── app.js fetch() per l'API attività
-├── contatti.js fetch() per il form contatti
-├── schema.sql schema MySQL completo (attivita + messaggi) + dati di esempio
-└── api/
-├── config.php connessione PDO
-├── credentials.example.php template delle credenziali (da copiare)
-├── credentials.php credenziali reali (NON tracciato da Git)
-├── attivita.php endpoint REST per le attività
-├── messaggi.php endpoint REST per il form contatti (solo POST)
-└── test.php script rapido per verificare la connessione al DB
-'''
+
+    ├── index.html            home / pagina personale
+    ├── attivita.html         demo gestione attività
+    ├── style.css             tema condiviso da tutte le pagine
+    ├── app.js                fetch() per l'API attività
+    ├── contatti.js           fetch() per il form contatti
+    ├── schema.sql            schema MySQL completo (attivita + messaggi) + dati di esempio
+    └── api/
+        ├── config.php                connessione PDO
+        ├── credentials.example.php   template delle credenziali (da copiare)
+        ├── credentials.php           credenziali reali (NON tracciato da Git)
+        ├── attivita.php              endpoint REST per le attività
+        ├── messaggi.php              endpoint REST per il form contatti (solo POST)
+        └── test.php                  script rapido per verificare la connessione al DB
 
 ## Come farlo partire in locale
 
 1. Crea il database ed esegui lo schema (crea entrambe le tabelle):
 
-mysql -u root -p -e "CREATE DATABASE corso_web CHARACTER SET utf8mb4;"
-mysql -u root -p corso_web < schema.sql
+       mysql -u root -p -e "CREATE DATABASE corso_web CHARACTER SET utf8mb4;"
+       mysql -u root -p corso_web < schema.sql
 
 2. Copia il template delle credenziali e inserisci i tuoi valori:
 
-cp api/credentials.example.php api/credentials.php
+       cp api/credentials.example.php api/credentials.php
 
 3. Avvia il server di sviluppo di PHP:
 
-php -S localhost:8000
+       php -S localhost:8000
 
 4. Apri `http://localhost:8000` nel browser.
-<<<<<<< HEAD
-=======
 
 ## Note di sicurezza
 
@@ -72,3 +69,9 @@ php -S localhost:8000
 - `api/messaggi.php` accetta solo `POST`: niente endpoint pubblico che
   elenchi i messaggi ricevuti, perché conterrebbero dati di terze
   persone (chi scrive tramite il form), non solo miei.
+
+## Note
+
+Progetto realizzato con il supporto di Claude (Anthropic) durante lo studio
+personale, come da indicazioni del corso: usato come tutor/revisore di
+codice, non per generare la soluzione da consegnare senza capirla.
