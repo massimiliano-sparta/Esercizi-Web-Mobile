@@ -30,7 +30,7 @@ Due concetti mostrati in pratica:
   richiesta malformata, `405` metodo non supportato).
 
 ## Struttura
-
+'''
 ├── index.html home / pagina personale
 ├── attivita.html demo gestione attività
 ├── style.css tema condiviso da tutte le pagine
@@ -44,7 +44,7 @@ Due concetti mostrati in pratica:
 ├── attivita.php endpoint REST per le attività
 ├── messaggi.php endpoint REST per il form contatti (solo POST)
 └── test.php script rapido per verificare la connessione al DB
-
+'''
 
 ## Come farlo partire in locale
 
@@ -72,10 +72,3 @@ php -S localhost:8000
 - `api/messaggi.php` accetta solo `POST`: niente endpoint pubblico che
   elenchi i messaggi ricevuti, perché conterrebbero dati di terze
   persone (chi scrive tramite il form), non solo miei.
-
-## Note
-
-Progetto realizzato con il supporto di Claude (Anthropic) durante lo studio
-personale, come da indicazioni del corso: usato come tutor/revisore di
-codice, non per generare la soluzione da consegnare senza capirla.
->>>>>>> 53a2581 (Unifica schema.sql e aggiorna il README alla struttura attuale del sito)
