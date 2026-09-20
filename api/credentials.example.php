@@ -3,9 +3,9 @@
  * credentials.example.php
  * ------------------------
  * Template per le credenziali del database.
- * Copia questo file in "credentials.php" (nella stessa cartella) e
- * inserisci i tuoi valori reali. "credentials.php" è escluso dal
- * repository tramite .gitignore, proprio per non finire mai su GitHub.
+ * Copia questo file in "credentials.php" (stessa cartella) e inserisci
+ * i tuoi valori reali. "credentials.php" è escluso dal repository
+ * tramite .gitignore, proprio per non finire mai su GitHub.
  */
 
 const DB_HOST = 'localhost';

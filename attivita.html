@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestione Attività — Demo REST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <p class="torna-home"><a href="index.html">&larr; Torna alla home</a></p>
+
+        <h1>Le mie attività</h1>
+        <p class="sottotitolo">Demo didattica: HTML/CSS/JS + PHP + MySQL + API REST</p>
+
+        <!-- Form per creare una nuova attività (POST) -->
+        <form id="form-nuova-attivita">
+            <input type="text" id="input-titolo" placeholder="Titolo attività" required>
+            <input type="text" id="input-descrizione" placeholder="Descrizione (opzionale)">
+            <input type="date" id="input-scadenza">
+            <button type="submit">Aggiungi</button>
+        </form>
+
+        <ul id="lista-attivita"></ul>
+    </main>
+
+    <footer class="site-footer">
+        <p>Realizzato da <strong>Massimiliano Sparta</strong> &middot; Corso di Programmazione Web e Mobile</p>
+        <p><a href="index.html">Pagina personale</a></p>
+        <p>&copy; 2026 Massimiliano Sparta.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
