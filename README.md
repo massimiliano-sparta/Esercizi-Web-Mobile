@@ -69,9 +69,3 @@ Due concetti mostrati in pratica:
 - `api/messaggi.php` accetta solo `POST`: niente endpoint pubblico che
   elenchi i messaggi ricevuti, perché conterrebbero dati di terze
   persone (chi scrive tramite il form), non solo miei.
-
-## Note
-
-Progetto realizzato con il supporto di Claude (Anthropic) durante lo studio
-personale, come da indicazioni del corso: usato come tutor/revisore di
-codice, non per generare la soluzione da consegnare senza capirla.
