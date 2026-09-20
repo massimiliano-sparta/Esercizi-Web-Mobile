@@ -1,8 +1,7 @@
--- Schema di esempio: gestione di una lista di "attività" (tipo to-do list,
--- ma con scadenza e descrizione, così ci sono abbastanza campi per mostrare
--- bene la differenza tra PUT e PATCH nella REST API).
+-- Schema completo del progetto: tabella "attivita" (demo REST) e tabella
+-- "messaggi" (form contatti della home). Un solo file, un solo comando.
 --
--- Uso: mysql -u root -p corso_web < schema.sql
+-- Uso: mysql -u corso_web -p corso_web < schema.sql
 
 CREATE TABLE IF NOT EXISTS attivita (
     id          INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,6 +10,17 @@ CREATE TABLE IF NOT EXISTS attivita (
     completata  TINYINT(1) NOT NULL DEFAULT 0,
     scadenza    DATE NULL,             -- può essere assente/vuota
     creato_il   TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Messaggi inviati dal form "Contatti" della home.
+CREATE TABLE IF NOT EXISTS messaggi (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    nome        VARCHAR(100) NOT NULL,
+    email       VARCHAR(190) NOT NULL,
+    motivo      VARCHAR(30)  NOT NULL,
+    preferenza  VARCHAR(10)  NOT NULL DEFAULT 'email',
+    messaggio   TEXT         NOT NULL,
+    inviato_il  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Un po' di dati iniziali per non partire da una tabella vuota
