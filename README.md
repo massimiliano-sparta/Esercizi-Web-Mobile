@@ -12,11 +12,11 @@ e proprio della consegna.
 
 ## Cosa contiene
 
-- **`index.html`** — la home: chi sono, tabelle con stato esami e
+- **`index.html`**: la home: chi sono, tabelle con stato esami e
   competenze tecniche, elenco progetti, form di contatto.
-- **`attivita.html`** — demo di gestione attività (to-do list), collegata
+- **`attivita.html`**: demo di gestione attività (to-do list), collegata
   a un'API REST completa (GET, POST, PUT, PATCH, DELETE).
-- **Form contatti** — invia un messaggio via `POST` a un endpoint REST
+- **Form contatti**: invia un messaggio via `POST` a un endpoint REST
   dedicato, con validazione sia lato client che lato server.
 
 Due concetti mostrati in pratica:
