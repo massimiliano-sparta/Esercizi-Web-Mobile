@@ -1,7 +1,7 @@
 # Massimiliano Sparta — Sito personale
 
 Sito personale con pagina "chi sono", stato degli esami, progetti e un form
-di contatto funzionante — realizzato durante il corso di **Programmazione
+di contatto funzionante; realizzato durante il corso di **Programmazione
 Web e Mobile** (UniMe) come banco di prova per lo stack richiesto dal
 progetto d'esame: HTML/CSS/JS lato client, PHP lato server, MySQL, servizio
 web RESTful.
