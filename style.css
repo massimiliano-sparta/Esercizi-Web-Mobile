@@ -10,7 +10,6 @@ body {
     max-width: 1000px;
     margin: 30px auto;
     padding: 30px;
-    border: 2px solid #444444;
     border-radius: 8px;
 }
 
@@ -290,4 +289,10 @@ li.attivita button {
     background-color: #3a1b1b;
     color: #ff9c9c;
     border: 1px solid #5c2d2d;
+}
+
+
+.section h2,
+.centrato {
+    text-align: center;
 }
